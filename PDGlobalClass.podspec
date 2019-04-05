@@ -17,7 +17,7 @@ TODO: Add long description of the pod here.
 
     s.authors          = { 'Prashant Dabhi' => 'prashantdabhi9033@gmail.com' }
     s.summary          = 'Global api call with get and post method it is use NSUrlSession and manage all use cases.'
-    s.source           = { :git => 'https://github.com/prashantdabhi9033/PDGlobalClass.git', :tag => '1.0' }
+    s.source           = { :git => 'https://github.com/prashantdabhi9033/PDGlobalClass.git', :tag => 'V1.1' }
     s.source_files     = 'ApiManager/*'
     s.swift_version = "4.2"
 end
