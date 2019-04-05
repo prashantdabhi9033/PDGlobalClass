@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hym-yL-8jA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MowebWebApiClasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nLO-nq-5K4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="43.628185907046479"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="im1-jV-Xj2">
+            <objects>
+                <viewController id="hym-yL-8jA" customClass="APITestViewController" customModule="MowebWebApiClasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CA1-Hh-K0c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lig-8Y-SNj">
+                                <rect key="frame" x="153.5" y="318.5" width="68" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CALL API"/>
+                                <connections>
+                                    <action selector="callAPI:" destination="hym-yL-8jA" eventType="touchUpInside" id="OKK-ck-gDG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TN2-3A-1hP">
+                                <rect key="frame" x="145.5" y="358.5" width="84" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MES LOGIN"/>
+                                <connections>
+                                    <action selector="callAPIMES_Login_GET:" destination="hym-yL-8jA" eventType="touchUpInside" id="hEf-2A-eDm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBo-3g-c8q">
+                                <rect key="frame" x="132" y="398.5" width="111" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MES COUNTRY"/>
+                                <connections>
+                                    <action selector="callAPIMES_CountryList_GET:" destination="hym-yL-8jA" eventType="touchUpInside" id="S5w-0k-5r4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lig-8Y-SNj" firstAttribute="centerY" secondItem="CA1-Hh-K0c" secondAttribute="centerY" id="C1Y-aH-0FI"/>
+                            <constraint firstItem="TN2-3A-1hP" firstAttribute="centerX" secondItem="lig-8Y-SNj" secondAttribute="centerX" id="Txn-nV-5XZ"/>
+                            <constraint firstItem="TN2-3A-1hP" firstAttribute="top" secondItem="lig-8Y-SNj" secondAttribute="bottom" constant="10" id="WeP-Db-EV5"/>
+                            <constraint firstItem="lig-8Y-SNj" firstAttribute="centerX" secondItem="CA1-Hh-K0c" secondAttribute="centerX" id="bun-qx-b2Z"/>
+                            <constraint firstItem="bBo-3g-c8q" firstAttribute="centerX" secondItem="TN2-3A-1hP" secondAttribute="centerX" id="rum-j3-TGD"/>
+                            <constraint firstItem="bBo-3g-c8q" firstAttribute="top" secondItem="TN2-3A-1hP" secondAttribute="bottom" constant="10" id="xgf-tW-Dga"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mss-55-Fm4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSn-pP-lBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2760.8000000000002" y="43.628185907046479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QDH-Ni-436">
+            <objects>
+                <navigationController storyboardIdentifier="tempNav" automaticallyAdjustsScrollViewInsets="NO" id="pFd-ZV-Cfd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7n7-UZ-H7P">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gEy-Xy-gzc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcT-Pm-M0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+</document>
